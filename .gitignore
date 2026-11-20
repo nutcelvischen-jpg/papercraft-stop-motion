@@ -1,0 +1,19 @@
+# Secrets — never commit
+.env
+.env.*
+*.key
+*.pem
+credentials.json
+secrets.json
+token.json
+secrets/
+
+# Generated media and work files
+out/
+work/
+frames/
+audio/
+*.mp4
+*.wav
+__pycache__/
+.DS_Store

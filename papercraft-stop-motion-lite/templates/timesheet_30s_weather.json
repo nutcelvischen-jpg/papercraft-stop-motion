@@ -1,0 +1,360 @@
+{
+ "dur": 30.0,
+ "fps": 24,
+ "size": [
+  1920,
+  1080
+ ],
+ "cards": [
+  {
+   "t0": 2.6,
+   "t1": 5.3,
+   "en": "CLOUD",
+   "zh": "雲朵"
+  },
+  {
+   "t0": 6.0,
+   "t1": 8.8,
+   "en": "RAIN",
+   "zh": "下雨"
+  },
+  {
+   "t0": 10.9,
+   "t1": 12.5,
+   "en": "UMBRELLA",
+   "zh": "雨傘"
+  },
+  {
+   "t0": 14.6,
+   "t1": 16.0,
+   "en": "PUDDLE",
+   "zh": "水窪"
+  },
+  {
+   "t0": 16.4,
+   "t1": 19.9,
+   "en": "BOOTS",
+   "zh": "雨鞋"
+  },
+  {
+   "t0": 20.4,
+   "t1": 23.4,
+   "en": "WIND",
+   "zh": "風"
+  },
+  {
+   "t0": 24.5,
+   "t1": 28.5,
+   "en": "RAINBOW",
+   "zh": "彩虹"
+  }
+ ],
+ "subs": [],
+ "fades": [
+  {
+   "t": 0,
+   "d": 0.5,
+   "dir": "in"
+  },
+  {
+   "t": 29.4,
+   "d": 0.6,
+   "dir": "out"
+  }
+ ],
+ "shots": [
+  {
+   "name": "s01_meadow_arrive",
+   "t": 0.0,
+   "t1": 5.4,
+   "size": "wide",
+   "bg": "src/bg_meadow_wide.png",
+   "mid_strip": "src/strip_mid_hills.png",
+   "near_strip": "src/strip_near_leaves.png",
+   "cam": {
+    "push": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     0,
+     40
+    ]
+   },
+   "beats": [
+    {
+     "t": 0.0,
+     "sheet": "elephant_walk_toward",
+     "lane": "back",
+     "path": [
+      [
+       1500,
+       null
+      ],
+      [
+       1150,
+       null
+      ]
+     ]
+    },
+    {
+     "t": 2.3,
+     "sheet": "elephant_look_up",
+     "lane": "back"
+    },
+    {
+     "t": 4.0,
+     "sheet": "elephant_walk_toward",
+     "lane": "mid",
+     "path": [
+      [
+       1150,
+       0.66
+      ],
+      [
+       960,
+       0.8
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "name": "s02_rain_first_drop",
+   "t": 5.4,
+   "t1": 8.9,
+   "size": "medium",
+   "bg": "src/bg_meadow_medium.png",
+   "warm": -0.4,
+   "cam": {
+    "push": [
+     1.0,
+     1.04
+    ]
+   },
+   "extras": [
+    {
+     "sheet": "fx_rain",
+     "x": 960,
+     "y": 0.55,
+     "h": 0.9,
+     "lane": "front",
+     "shadow": false,
+     "lane_scale": false
+    }
+   ],
+   "beats": [
+    {
+     "t": 5.4,
+     "sheet": "elephant_shiver",
+     "lane": "mid",
+     "x": 900
+    },
+    {
+     "t": 7.3,
+     "sheet": "elephant_crouch",
+     "lane": "mid"
+    }
+   ]
+  },
+  {
+   "name": "s03_umbrella_open",
+   "t": 8.9,
+   "t1": 12.6,
+   "size": "close-up",
+   "bg": "src/bg_meadow_close.png",
+   "warm": -0.4,
+   "beats": [
+    {
+     "t": 8.9,
+     "sheet": "elephant_reach_back",
+     "lane": "mid",
+     "x": 900
+    },
+    {
+     "t": 10.7,
+     "sheet": "elephant_open_umbrella",
+     "lane": "mid"
+    }
+   ]
+  },
+  {
+   "name": "s04_puddle_peer",
+   "t": 12.6,
+   "t1": 16.1,
+   "size": "wide",
+   "bg": "src/bg_meadow_wide.png",
+   "near_strip": "src/strip_near_leaves.png",
+   "warm": -0.4,
+   "cam": {
+    "push": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     0,
+     -30
+    ]
+   },
+   "extras": [
+    {
+     "img": "src/prop_puddle.png",
+     "x": 1050,
+     "y": 0.95,
+     "h": 0.08,
+     "lane": "front",
+     "shadow": false
+    }
+   ],
+   "beats": [
+    {
+     "t": 12.6,
+     "sheet": "elephant_walk_toward",
+     "lane": "front",
+     "path": [
+      [
+       700,
+       0.8
+      ],
+      [
+       900,
+       0.93
+      ]
+     ]
+    },
+    {
+     "t": 14.6,
+     "sheet": "elephant_peer_down",
+     "lane": "front"
+    }
+   ]
+  },
+  {
+   "name": "s05_boots_splash",
+   "t": 16.1,
+   "t1": 20.0,
+   "size": "medium",
+   "bg": "src/bg_meadow_medium.png",
+   "warm": -0.3,
+   "beats": [
+    {
+     "t": 16.1,
+     "sheet": "elephant_boots_on",
+     "lane": "mid",
+     "x": 760
+    },
+    {
+     "t": 17.9,
+     "sheet": "elephant_jump_splash",
+     "lane": "mid",
+     "path": [
+      [
+       760,
+       0.8
+      ],
+      [
+       1060,
+       0.8
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "name": "s06_wind_tug",
+   "t": 20.0,
+   "t1": 23.5,
+   "size": "wide",
+   "bg": "src/bg_meadow_wide.png",
+   "near_strip": "src/strip_near_leaves.png",
+   "warm": -0.5,
+   "cam": {
+    "push": [
+     1.03,
+     1.0
+    ],
+    "pan": [
+     0,
+     -60
+    ]
+   },
+   "beats": [
+    {
+     "t": 20.0,
+     "sheet": "elephant_slide_back",
+     "lane": "mid",
+     "path": [
+      [
+       1000,
+       0.8
+      ],
+      [
+       760,
+       0.82
+      ]
+     ]
+    },
+    {
+     "t": 21.8,
+     "sheet": "elephant_spin",
+     "lane": "mid"
+    }
+   ]
+  },
+  {
+   "name": "s07_rainbow_climb",
+   "t": 23.5,
+   "t1": 27.5,
+   "size": "wide",
+   "bg": "src/bg_meadow_rainbow_wide.png",
+   "surfaces": {
+    "hill": 0.62
+   },
+   "warm": 0.5,
+   "cam": {
+    "push": [
+     1.0,
+     1.06
+    ]
+   },
+   "beats": [
+    {
+     "t": 23.5,
+     "sheet": "elephant_climb",
+     "lane": "surface:hill",
+     "path": [
+      [
+       820,
+       0.82
+      ],
+      [
+       1000,
+       0.62
+      ]
+     ]
+    },
+    {
+     "t": 25.5,
+     "sheet": "elephant_sit_gaze",
+     "lane": "surface:hill"
+    }
+   ]
+  },
+  {
+   "name": "s08_smile_hold",
+   "t": 27.5,
+   "t1": 30.0,
+   "size": "close-up",
+   "bg": "src/bg_meadow_rainbow_close.png",
+   "warm": 0.5,
+   "beats": [
+    {
+     "t": 27.5,
+     "sheet": "elephant_close_smile",
+     "lane": "mid",
+     "x": 960
+    }
+   ]
+  }
+ ]
+}

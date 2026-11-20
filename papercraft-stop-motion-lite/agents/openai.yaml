@@ -1,0 +1,4 @@
+interface:
+  display_name: "Papercraft Stop Motion Lite"
+  short_description: "Create cut-paper characters and stop-motion films"
+  default_prompt: "用 $papercraft-stop-motion-lite 照步驟做一支紙藝定格動畫。"
